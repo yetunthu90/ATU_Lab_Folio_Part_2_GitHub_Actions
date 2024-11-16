@@ -1,0 +1,13 @@
+plugins {
+    id 'base'
+}
+
+task runPython(type: Exec) {
+    commandLine 'python', 'src/main/python/korok_seed_guide.py'
+}
+
+task runTests(type: Exec) {
+    commandLine 'python', '-m', 'unittest', 'discover', 'src/test/python'
+}
+
+build.dependsOn runPython, runTests
