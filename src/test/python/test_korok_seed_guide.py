@@ -1,7 +1,8 @@
 import unittest
 from unittest.mock import patch
 from io import StringIO
-from korok_seed_guide import korok_seed_guide  # Replace with the actual module name if needed
+from src.main.python.korok_seed_guide import korok_seed_guide
+
 
 class TestKorokSeedGuide(unittest.TestCase):
     @patch('builtins.input', side_effect=['10'])
