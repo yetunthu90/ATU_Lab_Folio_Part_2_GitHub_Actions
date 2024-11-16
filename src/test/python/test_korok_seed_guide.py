@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 from io import StringIO
-
+from korok_seed_guide import korok_seed_guide  # Assuming the function is in korok_seed_guide.py
 
 class TestKorokSeedGuide(unittest.TestCase):
     @patch('builtins.input', side_effect=['10'])
