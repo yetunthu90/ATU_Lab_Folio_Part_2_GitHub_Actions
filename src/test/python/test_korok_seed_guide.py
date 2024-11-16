@@ -1,7 +1,6 @@
 import unittest
 from unittest.mock import patch
 from io import StringIO
-from src.main.python.korok_seed_guide import korok_seed_guide
 
 
 class TestKorokSeedGuide(unittest.TestCase):
